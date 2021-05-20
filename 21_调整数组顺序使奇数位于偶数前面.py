@@ -1,3 +1,10 @@
+# 双指针
+# 头	     尾	  操作
+# 奇数	偶数	符合题意，l++、r--
+# 偶数	奇数	头、尾均不符合题意，交换头尾数值，l++、r--
+# 奇数	奇数	尾不符合题意，l++
+# 偶数	偶数	头不符合题意，r--
+
 def reorder(nums, target_func):
     if not isinstance(nums, list) or len(nums) == 0:
         return
